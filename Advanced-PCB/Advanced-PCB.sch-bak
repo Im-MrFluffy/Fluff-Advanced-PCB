@@ -14,11 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Advanced-PCB-rescue:XTAL_GND-keyboard_parts X1
+L Advanced-PCB-rescue:XTAL_GND-keyboard_parts-Advanced-PCB-rescue X1
 U 1 1 5E625196
 P 1950 14975
 F 0 "X1" H 1950 15100 60  0000 C CNN
-F 1 "16MHz" H 1975 14725 60  0000 C CNN
+F 1 "XTAL_GND" H 1975 14725 60  0000 C CNN
 F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm_HandSoldering" H 1950 14975 60  0001 C CNN
 F 3 "" H 1950 14975 60  0000 C CNN
 	1    1950 14975
@@ -33,17 +33,6 @@ F 1 "22pF" H 2617 15030 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2525 15075 50  0001 C CNN
 F 3 "~" H 2525 15075 50  0001 C CNN
 	1    2525 15075
-	1    0    0    -1  
-$EndComp
-$Comp
-L Advanced-PCB-rescue:GND-keyboard_parts #PWR05
-U 1 1 5E627661
-P 1950 15475
-F 0 "#PWR05" H 1950 15525 20  0001 C CNN
-F 1 "GND" H 1950 15375 30  0000 C CNN
-F 2 "" H 1950 15475 60  0000 C CNN
-F 3 "" H 1950 15475 60  0000 C CNN
-	1    1950 15475
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -130,17 +119,6 @@ F 3 "~" H 2375 12900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:GND-keyboard_parts #PWR02
-U 1 1 5E63144E
-P 1150 13275
-F 0 "#PWR02" H 1150 13325 20  0001 C CNN
-F 1 "GND" H 1150 13175 30  0000 C CNN
-F 2 "" H 1150 13275 60  0000 C CNN
-F 3 "" H 1150 13275 60  0000 C CNN
-	1    1150 13275
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR01
 U 1 1 5E631CFF
 P 1150 12500
@@ -183,17 +161,6 @@ Wire Wire Line
 	1150 13000 1150 13275
 Connection ~ 1150 13000
 $Comp
-L Advanced-PCB-rescue:GND-keyboard_parts #PWR03
-U 1 1 5E6342F3
-P 1475 14475
-F 0 "#PWR03" H 1475 14525 20  0001 C CNN
-F 1 "GND" H 1475 14375 30  0000 C CNN
-F 2 "" H 1475 14475 60  0000 C CNN
-F 3 "" H 1475 14475 60  0000 C CNN
-	1    1475 14475
-	0    1    1    0   
-$EndComp
-$Comp
 L power:VCC #PWR04
 U 1 1 5E634FB0
 P 1500 14125
@@ -204,19 +171,6 @@ F 3 "" H 1500 14125 50  0001 C CNN
 	1    1500 14125
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R1
-U 1 1 5E635F45
-P 1925 14125
-F 0 "R1" V 1850 14125 50  0000 C CNN
-F 1 "10k" V 1925 14125 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1855 14125 50  0001 C CNN
-F 3 "~" H 1925 14125 50  0001 C CNN
-	1    1925 14125
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1500 14125 1775 14125
 Wire Wire Line
 	2225 14125 2225 14475
 Wire Wire Line
@@ -224,18 +178,7 @@ Wire Wire Line
 Wire Wire Line
 	1475 14475 1625 14475
 $Comp
-L Advanced-PCB-rescue:GND-keyboard_parts #PWR017
-U 1 1 5E64AE8E
-P 5850 14375
-F 0 "#PWR017" H 5850 14425 20  0001 C CNN
-F 1 "GND" V 5850 14200 30  0000 L CNN
-F 2 "" H 5850 14375 60  0000 C CNN
-F 3 "" H 5850 14375 60  0000 C CNN
-	1    5850 14375
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Advanced-PCB-rescue:USB_mini_micro_B-keyboard_parts J1
+L Advanced-PCB-rescue:USB_mini_micro_B-keyboard_parts-Advanced-PCB-rescue J1
 U 1 1 5E64C53F
 P 1700 13525
 F 0 "J1" H 1275 13425 60  0000 C CNN
@@ -289,17 +232,6 @@ F 3 "~" H 2650 13775 50  0001 C CNN
 	1    2650 13775
 	0    1    1    0   
 $EndComp
-$Comp
-L Advanced-PCB-rescue:GND-keyboard_parts #PWR07
-U 1 1 5E65AE07
-P 2425 13675
-F 0 "#PWR07" H 2425 13725 20  0001 C CNN
-F 1 "GND" V 2425 13500 30  0000 L CNN
-F 2 "" H 2425 13675 60  0000 C CNN
-F 3 "" H 2425 13675 60  0000 C CNN
-	1    2425 13675
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1850 13375 2125 13375
 Wire Wire Line
@@ -335,32 +267,10 @@ F 3 "" H 5575 13275 50  0001 C CNN
 	1    5575 13275
 	0    1    1    0   
 $EndComp
-$Comp
-L Advanced-PCB-rescue:GND-keyboard_parts #PWR015
-U 1 1 5E6641DC
-P 5575 13375
-F 0 "#PWR015" H 5575 13425 20  0001 C CNN
-F 1 "GND" H 5525 13275 30  0000 L CNN
-F 2 "" H 5575 13375 60  0000 C CNN
-F 3 "" H 5575 13375 60  0000 C CNN
-	1    5575 13375
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5275 13275 5575 13275
 Wire Wire Line
 	5275 13375 5575 13375
-$Comp
-L Advanced-PCB-rescue:GND-keyboard_parts #PWR016
-U 1 1 5E666AB4
-P 5575 14175
-F 0 "#PWR016" H 5575 14225 20  0001 C CNN
-F 1 "GND" H 5525 14075 30  0000 L CNN
-F 2 "" H 5575 14175 60  0000 C CNN
-F 3 "" H 5575 14175 60  0000 C CNN
-	1    5575 14175
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5275 14175 5575 14175
 $Comp
@@ -387,17 +297,6 @@ F 3 "" H 5525 15275 50  0001 C CNN
 	1    5525 15275
 	0    1    1    0   
 $EndComp
-$Comp
-L Advanced-PCB-rescue:GND-keyboard_parts #PWR013
-U 1 1 5E669F03
-P 5525 15375
-F 0 "#PWR013" H 5525 15425 20  0001 C CNN
-F 1 "GND" H 5475 15275 30  0000 L CNN
-F 2 "" H 5525 15375 60  0000 C CNN
-F 3 "" H 5525 15375 60  0000 C CNN
-	1    5525 15375
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5275 15375 5525 15375
 Wire Wire Line
@@ -412,17 +311,6 @@ F 2 "" H 2900 14575 50  0001 C CNN
 F 3 "" H 2900 14575 50  0001 C CNN
 	1    2900 14575
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Advanced-PCB-rescue:GND-keyboard_parts #PWR09
-U 1 1 5E66D425
-P 2900 14675
-F 0 "#PWR09" H 2900 14725 20  0001 C CNN
-F 1 "GND" H 2850 14575 30  0000 L CNN
-F 2 "" H 2900 14675 60  0000 C CNN
-F 3 "" H 2900 14675 60  0000 C CNN
-	1    2900 14675
-	0    1    1    0   
 $EndComp
 $Comp
 L power:VCC #PWR010
@@ -452,7 +340,7 @@ Wire Wire Line
 	5725 14375 5850 14375
 Connection ~ 2225 14475
 $Comp
-L Advanced-PCB-rescue:SW_PUSH-keyboard_parts SWPw1
+L Advanced-PCB-rescue:SW_PUSH-keyboard_parts-Advanced-PCB-rescue SWPw1
 U 1 1 5E7030D9
 P 1925 14475
 F 0 "SWPw1" H 1925 14475 39  0000 C CNN
@@ -508,7 +396,7 @@ F 3 "~" V 2450 1325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW6
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW6
 U 1 1 5E6CB402
 P 2450 1775
 F 0 "SW6" H 2375 1875 50  0000 L CNN
@@ -548,7 +436,7 @@ F 3 "~" V 4125 1325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW16
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW16
 U 1 1 5E820388
 P 4125 1775
 F 0 "SW16" H 4050 1875 50  0000 L CNN
@@ -570,7 +458,7 @@ F 3 "~" V 3275 1325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW11
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW11
 U 1 1 5E820394
 P 3275 1775
 F 0 "SW11" H 3200 1875 50  0000 L CNN
@@ -766,7 +654,7 @@ Col14
 Text GLabel 13050 825  1    50   Input ~ 0
 Col15
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW1
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW1
 U 1 1 5E6BEA29
 P 1600 1775
 F 0 "SW1" H 1525 1875 50  0000 L CNN
@@ -777,7 +665,7 @@ F 3 "" H 1600 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW66
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW66
 U 1 1 5E875F22
 P 13400 1775
 F 0 "SW66" H 13325 1875 50  0000 L CNN
@@ -788,7 +676,7 @@ F 3 "" H 13400 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW20
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW20
 U 1 1 5E822A5B
 P 4950 1775
 F 0 "SW20" H 4875 1875 50  0000 L CNN
@@ -799,7 +687,7 @@ F 3 "" H 4950 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW24
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW24
 U 1 1 5E822A4F
 P 5800 1775
 F 0 "SW24" H 5725 1875 50  0000 L CNN
@@ -810,7 +698,7 @@ F 3 "" H 5800 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW29
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW29
 U 1 1 5E826936
 P 6650 1775
 F 0 "SW29" H 6575 1875 50  0000 L CNN
@@ -821,7 +709,7 @@ F 3 "" H 6650 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW33
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW33
 U 1 1 5E82692A
 P 7500 1775
 F 0 "SW33" H 7425 1875 50  0000 L CNN
@@ -832,7 +720,7 @@ F 3 "" H 7500 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW37
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW37
 U 1 1 5E82AED9
 P 8350 1775
 F 0 "SW37" H 8275 1875 50  0000 L CNN
@@ -843,7 +731,7 @@ F 3 "" H 8350 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW41
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW41
 U 1 1 5E82AECD
 P 9200 1775
 F 0 "SW41" H 9125 1875 50  0000 L CNN
@@ -854,7 +742,7 @@ F 3 "" H 9200 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW46
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW46
 U 1 1 5E834C44
 P 10050 1775
 F 0 "SW46" H 9975 1875 50  0000 L CNN
@@ -865,7 +753,7 @@ F 3 "" H 10050 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW51
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW51
 U 1 1 5E834C38
 P 10900 1800
 F 0 "SW51" H 10825 1900 50  0000 L CNN
@@ -876,7 +764,7 @@ F 3 "" H 10900 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW56
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW56
 U 1 1 5E870832
 P 11700 1775
 F 0 "SW56" H 11625 1875 50  0000 L CNN
@@ -887,7 +775,7 @@ F 3 "" H 11700 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW61
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW61
 U 1 1 5E870826
 P 12550 1775
 F 0 "SW61" H 12475 1875 50  0000 L CNN
@@ -913,7 +801,7 @@ F 3 "~" V 1600 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW2
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW2
 U 1 1 5E94FD8C
 P 1600 3000
 F 0 "SW2" H 1525 3100 50  0000 L CNN
@@ -937,7 +825,7 @@ F 3 "~" V 2450 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW7
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW7
 U 1 1 5E9551DF
 P 2450 3000
 F 0 "SW7" H 2375 3100 50  0000 L CNN
@@ -961,7 +849,7 @@ F 3 "~" V 3275 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW12
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW12
 U 1 1 5E95A443
 P 3275 3000
 F 0 "SW12" H 3200 3100 50  0000 L CNN
@@ -985,7 +873,7 @@ F 3 "~" V 4125 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW17
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW17
 U 1 1 5E96A9FD
 P 4125 3000
 F 0 "SW17" H 4050 3100 50  0000 L CNN
@@ -1009,7 +897,7 @@ F 3 "~" V 4950 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW21
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW21
 U 1 1 5E970008
 P 4950 3000
 F 0 "SW21" H 4875 3100 50  0000 L CNN
@@ -1033,7 +921,7 @@ F 3 "~" V 5800 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW25
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW25
 U 1 1 5E97563C
 P 5800 3000
 F 0 "SW25" H 5725 3100 50  0000 L CNN
@@ -1057,7 +945,7 @@ F 3 "~" V 6650 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW30
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW30
 U 1 1 5E980AAF
 P 6650 3000
 F 0 "SW30" H 6575 3100 50  0000 L CNN
@@ -1081,7 +969,7 @@ F 3 "~" V 7500 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW34
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW34
 U 1 1 5E986542
 P 7500 3000
 F 0 "SW34" H 7425 3100 50  0000 L CNN
@@ -1105,7 +993,7 @@ F 3 "~" V 8350 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW38
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW38
 U 1 1 5E98C300
 P 8350 3000
 F 0 "SW38" H 8275 3100 50  0000 L CNN
@@ -1129,7 +1017,7 @@ F 3 "~" V 9200 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW42
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW42
 U 1 1 5E991D4D
 P 9200 3000
 F 0 "SW42" H 9125 3100 50  0000 L CNN
@@ -1153,7 +1041,7 @@ F 3 "~" V 10050 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW47
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW47
 U 1 1 5E997CB8
 P 10050 3000
 F 0 "SW47" H 9975 3100 50  0000 L CNN
@@ -1177,7 +1065,7 @@ F 3 "~" V 10900 2575 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW52
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW52
 U 1 1 5E99D74C
 P 10900 3025
 F 0 "SW52" H 10825 3125 50  0000 L CNN
@@ -1201,7 +1089,7 @@ F 3 "~" V 11700 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW57
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW57
 U 1 1 5E9A340E
 P 11700 3000
 F 0 "SW57" H 11625 3100 50  0000 L CNN
@@ -1225,7 +1113,7 @@ F 3 "~" V 12550 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW62
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW62
 U 1 1 5E9AF5FE
 P 12550 3000
 F 0 "SW62" H 12475 3100 50  0000 L CNN
@@ -1249,7 +1137,7 @@ F 3 "~" V 13400 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW67
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW67
 U 1 1 5E9B5918
 P 13400 3000
 F 0 "SW67" H 13325 3100 50  0000 L CNN
@@ -1315,7 +1203,7 @@ F 3 "~" V 1600 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW3
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW3
 U 1 1 5EA4E4AB
 P 1600 4175
 F 0 "SW3" H 1525 4275 50  0000 L CNN
@@ -1339,7 +1227,7 @@ F 3 "~" V 2450 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW8
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW8
 U 1 1 5EA4E4B8
 P 2450 4175
 F 0 "SW8" H 2375 4275 50  0000 L CNN
@@ -1363,7 +1251,7 @@ F 3 "~" V 3275 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW13
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW13
 U 1 1 5EA4E4C5
 P 3275 4175
 F 0 "SW13" H 3200 4275 50  0000 L CNN
@@ -1387,7 +1275,7 @@ F 3 "~" V 4125 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW18
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW18
 U 1 1 5EA4E4D2
 P 4125 4175
 F 0 "SW18" H 4050 4275 50  0000 L CNN
@@ -1411,7 +1299,7 @@ F 3 "~" V 4950 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW22
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW22
 U 1 1 5EA4E4DF
 P 4950 4175
 F 0 "SW22" H 4875 4275 50  0000 L CNN
@@ -1435,7 +1323,7 @@ F 3 "~" V 5800 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW26
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW26
 U 1 1 5EA4E4EC
 P 5800 4175
 F 0 "SW26" H 5725 4275 50  0000 L CNN
@@ -1459,7 +1347,7 @@ F 3 "~" V 6650 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW31
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW31
 U 1 1 5EA4E4F9
 P 6650 4175
 F 0 "SW31" H 6575 4275 50  0000 L CNN
@@ -1496,7 +1384,7 @@ F 3 "~" V 8350 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW39
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW39
 U 1 1 5EA4E513
 P 8350 4175
 F 0 "SW39" H 8275 4275 50  0000 L CNN
@@ -1520,7 +1408,7 @@ F 3 "~" V 9200 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW43
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW43
 U 1 1 5EA4E520
 P 9200 4175
 F 0 "SW43" H 9125 4275 50  0000 L CNN
@@ -1544,7 +1432,7 @@ F 3 "~" V 10050 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW48
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW48
 U 1 1 5EA4E52D
 P 10050 4175
 F 0 "SW48" H 9975 4275 50  0000 L CNN
@@ -1568,7 +1456,7 @@ F 3 "~" V 10900 3750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW53
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW53
 U 1 1 5EA4E53A
 P 10900 4200
 F 0 "SW53" H 10825 4300 50  0000 L CNN
@@ -1592,7 +1480,7 @@ F 3 "~" V 11700 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW58
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW58
 U 1 1 5EA4E547
 P 11700 4175
 F 0 "SW58" H 11625 4275 50  0000 L CNN
@@ -1616,7 +1504,7 @@ F 3 "~" V 12550 3725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW63
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW63
 U 1 1 5EA4E554
 P 12550 4175
 F 0 "SW63" H 12475 4275 50  0000 L CNN
@@ -1666,7 +1554,7 @@ Connection ~ 11700 3400
 Wire Wire Line
 	11700 3400 12550 3400
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW35
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW35
 U 1 1 5EA4E506
 P 7500 4175
 F 0 "SW35" H 7425 4275 50  0000 L CNN
@@ -1688,7 +1576,7 @@ F 3 "~" V 1600 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW4
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW4
 U 1 1 5EAEA02B
 P 1600 5400
 F 0 "SW4" H 1525 5500 50  0000 L CNN
@@ -1710,7 +1598,7 @@ F 3 "~" V 2450 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW9
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW9
 U 1 1 5EAEA038
 P 2450 5400
 F 0 "SW9" H 2375 5500 50  0000 L CNN
@@ -1734,7 +1622,7 @@ F 3 "~" V 3275 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW14
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW14
 U 1 1 5EAEA045
 P 3275 5400
 F 0 "SW14" H 3200 5500 50  0000 L CNN
@@ -1758,7 +1646,7 @@ F 3 "~" V 4125 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW19
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW19
 U 1 1 5EAEA052
 P 4125 5400
 F 0 "SW19" H 4050 5500 50  0000 L CNN
@@ -1782,7 +1670,7 @@ F 3 "~" V 4950 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW23
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW23
 U 1 1 5EAEA05F
 P 4950 5400
 F 0 "SW23" H 4875 5500 50  0000 L CNN
@@ -1806,7 +1694,7 @@ F 3 "~" V 5800 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW27
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW27
 U 1 1 5EAEA06C
 P 5800 5400
 F 0 "SW27" H 5725 5500 50  0000 L CNN
@@ -1830,7 +1718,7 @@ F 3 "~" V 6650 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW32
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW32
 U 1 1 5EAEA079
 P 6650 5400
 F 0 "SW32" H 6575 5500 50  0000 L CNN
@@ -1867,7 +1755,7 @@ F 3 "~" V 8350 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW40
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW40
 U 1 1 5EAEA08D
 P 8350 5400
 F 0 "SW40" H 8275 5500 50  0000 L CNN
@@ -1891,7 +1779,7 @@ F 3 "~" V 9200 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW44
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW44
 U 1 1 5EAEA09A
 P 9200 5400
 F 0 "SW44" H 9125 5500 50  0000 L CNN
@@ -1915,7 +1803,7 @@ F 3 "~" V 10050 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW49
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW49
 U 1 1 5EAEA0A7
 P 10050 5400
 F 0 "SW49" H 9975 5500 50  0000 L CNN
@@ -1952,7 +1840,7 @@ F 3 "~" V 11700 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW59
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW59
 U 1 1 5EAEA0C1
 P 11700 5400
 F 0 "SW59" H 11625 5500 50  0000 L CNN
@@ -1976,7 +1864,7 @@ F 3 "~" V 12550 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW64
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW64
 U 1 1 5EAEA0CE
 P 12550 5400
 F 0 "SW64" H 12475 5500 50  0000 L CNN
@@ -2020,7 +1908,7 @@ Connection ~ 11700 4625
 Wire Wire Line
 	11700 4625 12550 4625
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW36
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW36
 U 1 1 5EAEA0FC
 P 7500 5400
 F 0 "SW36" H 7425 5500 50  0000 L CNN
@@ -2053,7 +1941,7 @@ F 3 "~" V 1600 6175 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW5
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW5
 U 1 1 5EB40BDC
 P 1600 6625
 F 0 "SW5" H 1525 6725 50  0000 L CNN
@@ -2075,7 +1963,7 @@ F 3 "~" V 2450 6175 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW10
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW10
 U 1 1 5EB40BE9
 P 2450 6625
 F 0 "SW10" H 2375 6725 50  0000 L CNN
@@ -2097,7 +1985,7 @@ F 3 "~" V 3275 6175 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW15
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW15
 U 1 1 5EB40BF6
 P 3275 6625
 F 0 "SW15" H 3200 6725 50  0000 L CNN
@@ -2119,7 +2007,7 @@ F 3 "~" V 5800 6175 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW28
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW28
 U 1 1 5EB40C03
 P 5800 6625
 F 0 "SW28" H 5725 6725 50  0000 L CNN
@@ -2141,7 +2029,7 @@ F 3 "~" V 10900 6175 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW55
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW55
 U 1 1 5EB40C2A
 P 10900 6625
 F 0 "SW55" H 10825 6725 50  0000 L CNN
@@ -2174,7 +2062,7 @@ F 3 "~" V 12550 6175 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW65
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW65
 U 1 1 5EB40C3E
 P 12550 6625
 F 0 "SW65" H 12475 6725 50  0000 L CNN
@@ -2185,7 +2073,7 @@ F 3 "" H 12550 6625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW60
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW60
 U 1 1 5EB40C57
 P 11700 6625
 F 0 "SW60" H 11625 6725 50  0000 L CNN
@@ -2351,7 +2239,7 @@ $EndComp
 Connection ~ 11350 5400
 Connection ~ 12200 5400
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW54
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW54
 U 1 1 5EAEA0B4
 P 10900 5425
 F 0 "SW54" H 10825 5525 50  0000 L CNN
@@ -2372,7 +2260,7 @@ Connection ~ 9700 5400
 Text Notes 13050 6700 0    98   ~ 0
 BOTTOM LAYOUT 1\n
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW50
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW50
 U 1 1 5EB40C1D
 P 10050 6625
 F 0 "SW50" H 10250 7000 50  0000 L CNN
@@ -2411,7 +2299,7 @@ BOTTOM LAYOUT 2\n\n
 Wire Wire Line
 	10900 7175 10900 7450
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW70
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW70
 U 1 1 5F39E009
 P 10900 8000
 F 0 "SW70" H 10825 8100 50  0000 L CNN
@@ -2433,7 +2321,7 @@ F 3 "~" V 10900 7550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW69
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW69
 U 1 1 5F3853B1
 P 10125 6675
 F 0 "SW69" H 9950 6275 50  0000 L CNN
@@ -2444,7 +2332,7 @@ F 3 "" H 10125 6675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW45
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW45
 U 1 1 5EB40C10
 P 9200 6625
 F 0 "SW45" H 9350 7000 50  0000 L CNN
@@ -2455,7 +2343,7 @@ F 3 "" H 9200 6625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Advanced-PCB-rescue:MXSwitch-acheronSymbols SW68
+L Advanced-PCB-rescue:MXSwitch-acheronSymbols-Advanced-PCB-rescue SW68
 U 1 1 5F3853BD
 P 9250 6650
 F 0 "SW68" H 9150 6350 50  0000 L CNN
@@ -2537,7 +2425,7 @@ Col9
 Wire Wire Line
 	5275 14075 5550 14075
 $Comp
-L Advanced-PCB-rescue:ATMEGA32U4-keyboard_parts U1
+L Advanced-PCB-rescue:ATMEGA32U4-keyboard_parts-Advanced-PCB-rescue U1
 U 1 1 5E6201CF
 P 4175 14325
 F 0 "U1" H 4200 15662 60  0000 C CNN
@@ -2693,5 +2581,120 @@ Wire Wire Line
 Wire Wire Line
 	10375 7175 10900 7175
 Wire Wire Line
-	10550 5425 10550 8000
+	10550 5425 10550 6625
+Connection ~ 10550 6625
+Wire Wire Line
+	10550 6625 10550 8000
+$Comp
+L power:GND #PWR0101
+U 1 1 5EEB6B2C
+P 1150 13275
+F 0 "#PWR0101" H 1150 13025 50  0001 C CNN
+F 1 "GND" H 1155 13102 50  0000 C CNN
+F 2 "" H 1150 13275 50  0001 C CNN
+F 3 "" H 1150 13275 50  0001 C CNN
+	1    1150 13275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EECE429
+P 1475 14475
+F 0 "#PWR0102" H 1475 14225 50  0001 C CNN
+F 1 "GND" V 1480 14347 50  0000 R CNN
+F 2 "" H 1475 14475 50  0001 C CNN
+F 3 "" H 1475 14475 50  0001 C CNN
+	1    1475 14475
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5EEFA938
+P 2425 13675
+F 0 "#PWR0103" H 2425 13425 50  0001 C CNN
+F 1 "GND" V 2430 13547 50  0000 R CNN
+F 2 "" H 2425 13675 50  0001 C CNN
+F 3 "" H 2425 13675 50  0001 C CNN
+	1    2425 13675
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5EF103F3
+P 2900 14675
+F 0 "#PWR0104" H 2900 14425 50  0001 C CNN
+F 1 "GND" V 2905 14547 50  0000 R CNN
+F 2 "" H 2900 14675 50  0001 C CNN
+F 3 "" H 2900 14675 50  0001 C CNN
+	1    2900 14675
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5EF3A3E1
+P 1950 15475
+F 0 "#PWR0105" H 1950 15225 50  0001 C CNN
+F 1 "GND" V 1955 15347 50  0000 R CNN
+F 2 "" H 1950 15475 50  0001 C CNN
+F 3 "" H 1950 15475 50  0001 C CNN
+	1    1950 15475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5EF643ED
+P 5525 15375
+F 0 "#PWR0106" H 5525 15125 50  0001 C CNN
+F 1 "GND" V 5530 15247 50  0000 R CNN
+F 2 "" H 5525 15375 50  0001 C CNN
+F 3 "" H 5525 15375 50  0001 C CNN
+	1    5525 15375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5EF79333
+P 5850 14375
+F 0 "#PWR0107" H 5850 14125 50  0001 C CNN
+F 1 "GND" V 5855 14247 50  0000 R CNN
+F 2 "" H 5850 14375 50  0001 C CNN
+F 3 "" H 5850 14375 50  0001 C CNN
+	1    5850 14375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5EFB7B99
+P 5575 14175
+F 0 "#PWR0108" H 5575 13925 50  0001 C CNN
+F 1 "GND" V 5580 14047 50  0000 R CNN
+F 2 "" H 5575 14175 50  0001 C CNN
+F 3 "" H 5575 14175 50  0001 C CNN
+	1    5575 14175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5EFF7077
+P 5575 13375
+F 0 "#PWR0109" H 5575 13125 50  0001 C CNN
+F 1 "GND" V 5580 13247 50  0000 R CNN
+F 2 "" H 5575 13375 50  0001 C CNN
+F 3 "" H 5575 13375 50  0001 C CNN
+	1    5575 13375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E67690A
+P 1925 14125
+F 0 "R1" V 1850 14125 50  0000 C CNN
+F 1 "10k" V 1925 14125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1855 14125 50  0001 C CNN
+F 3 "~" H 1925 14125 50  0001 C CNN
+	1    1925 14125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 14125 1775 14125
 $EndSCHEMATC
