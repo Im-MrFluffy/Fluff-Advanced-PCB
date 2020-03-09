@@ -534,6 +534,9 @@ $EndComp
 Wire Wire Line
 	10900 1000 10900 1250
 Connection ~ 9700 1775
+Connection ~ 10050 1000
+Wire Wire Line
+	10050 1000 10050 1275
 $Comp
 L Device:D_Small D51
 U 1 1 5E834C32
@@ -548,12 +551,12 @@ $EndComp
 $Comp
 L Device:D_Small D46
 U 1 1 5E834C3E
-P 10050 1325
-F 0 "D46" V 10125 1375 50  0000 L CNN
-F 1 "1N4148W" V 9925 1200 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 10050 1325 50  0001 C CNN
-F 3 "~" V 10050 1325 50  0001 C CNN
-	1    10050 1325
+P 10050 1375
+F 0 "D46" V 10125 1425 50  0000 L CNN
+F 1 "1N4148W" V 9925 1250 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 10050 1375 50  0001 C CNN
+F 3 "~" V 10050 1375 50  0001 C CNN
+	1    10050 1375
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -645,7 +648,7 @@ U 1 1 5E6BEA29
 P 1600 1775
 F 0 "SW1" H 1525 1875 50  0000 L CNN
 F 1 "Esc" H 1600 1775 79  0000 C CNN
-F 2 "acheron_MX:MX100" H 1600 1775 50  0001 C CNN
+F 2 "acheron_MXA:MXA100" H 1600 1775 50  0001 C CNN
 F 3 "" H 1600 1775 50  0001 C CNN
 	1    1600 1775
 	1    0    0    -1  
@@ -792,7 +795,7 @@ U 1 1 5E94FD8C
 P 1600 3000
 F 0 "SW2" H 1525 3100 50  0000 L CNN
 F 1 "Tab 1.50" H 1600 3000 59  0000 C CNN
-F 2 "acheron_MX:MX150" H 1600 3000 50  0001 C CNN
+F 2 "acheron_MXA:MXA150" H 1600 3000 50  0001 C CNN
 F 3 "" H 1600 3000 50  0001 C CNN
 	1    1600 3000
 	1    0    0    -1  
@@ -1194,7 +1197,7 @@ U 1 1 5EA4E4AB
 P 1600 4175
 F 0 "SW3" H 1525 4275 50  0000 L CNN
 F 1 "Caps 1.75" H 1600 4175 59  0000 C CNN
-F 2 "acheron_MX:MX175" H 1600 4175 50  0001 C CNN
+F 2 "acheron_MXA:MXA175" H 1600 4175 50  0001 C CNN
 F 3 "" H 1600 4175 50  0001 C CNN
 	1    1600 4175
 	1    0    0    -1  
@@ -1567,7 +1570,7 @@ U 1 1 5EAEA02B
 P 1600 5400
 F 0 "SW4" H 1525 5500 50  0000 L CNN
 F 1 "Shift 2.25" H 1600 5400 59  0000 C CNN
-F 2 "acheron_MX:MX225R" H 1600 5400 50  0001 C CNN
+F 2 "acheron_MXA:MXA225R" H 1600 5400 50  0001 C CNN
 F 3 "" H 1600 5400 50  0001 C CNN
 	1    1600 5400
 	1    0    0    -1  
@@ -1932,7 +1935,7 @@ U 1 1 5EB40BDC
 P 1600 6625
 F 0 "SW5" H 1525 6725 50  0000 L CNN
 F 1 "Ctrl 1.25" H 1600 6625 59  0000 C CNN
-F 2 "acheron_MX:MX125" H 1600 6625 50  0001 C CNN
+F 2 "acheron_MXA:MXA125" H 1600 6625 50  0001 C CNN
 F 3 "" H 1600 6625 50  0001 C CNN
 	1    1600 6625
 	1    0    0    -1  
@@ -2370,23 +2373,23 @@ Connection ~ 10050 6275
 Wire Wire Line
 	10125 6275 10050 6275
 NoConn ~ 5275 13475
-Text GLabel 2850 15375 2    50   Input ~ 0
+Text GLabel 5550 13575 0    50   Input ~ 0
 Row1
 Wire Wire Line
-	5275 13575 5550 13575
-Text GLabel 5550 13775 0    50   Input ~ 0
+	3125 14275 2850 14275
+Text GLabel 5550 15175 0    50   Input ~ 0
 Col3
-Text GLabel 5550 13875 0    50   Input ~ 0
+Text GLabel 5550 15075 0    50   Input ~ 0
 Col4
-Text GLabel 5550 13975 0    50   Input ~ 0
+Text GLabel 5550 14975 0    50   Input ~ 0
 Col5
-Text GLabel 2850 14275 2    50   Input ~ 0
+Text GLabel 5550 14875 0    50   Input ~ 0
 Col6
 Text GLabel 5550 14575 0    50   Input ~ 0
 Col9
-Text GLabel 5550 14475 0    50   Input ~ 0
+Text GLabel 5550 14675 0    50   Input ~ 0
 Col8
-Text GLabel 5550 14075 0    50   Input ~ 0
+Text GLabel 5550 14775 0    50   Input ~ 0
 Col7
 $Comp
 L Advanced-PCB-rescue:ATMEGA32U4-keyboard_parts-Advanced-PCB-rescue U1
@@ -2400,37 +2403,41 @@ F 3 "" H 4175 14325 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5275 13775 5550 13775
+	5275 15175 5550 15175
 Wire Wire Line
-	5275 13875 5550 13875
+	5275 15075 5550 15075
 Wire Wire Line
-	5275 13975 5550 13975
+	5275 14975 5550 14975
 Wire Wire Line
-	3125 14275 2850 14275
+	5275 14875 5550 14875
 Wire Wire Line
 	5275 14575 5550 14575
 Wire Wire Line
-	5275 14475 5550 14475
+	5275 14675 5550 14675
 Wire Wire Line
-	5275 14075 5550 14075
-Text GLabel 5600 14675 0    50   Input ~ 0
+	5275 14775 5550 14775
+Text GLabel 5600 14475 0    50   Input ~ 0
 Col10
-Text GLabel 5525 14775 0    50   Input ~ 0
+Text GLabel 2875 14975 2    50   Input ~ 0
 Col15
-Text GLabel 5525 14875 0    50   Input ~ 0
+Text GLabel 2875 15075 2    50   Input ~ 0
 Col14
-Text GLabel 5525 14975 0    50   Input ~ 0
+Text GLabel 2875 15175 2    50   Input ~ 0
 Col13
-Text GLabel 5525 15075 0    50   Input ~ 0
+Text GLabel 2875 15275 2    50   Input ~ 0
 Col12
+Text GLabel 2875 15375 2    50   Input ~ 0
+Col11
 Wire Wire Line
-	5525 15075 5275 15075
+	2875 15375 3125 15375
 Wire Wire Line
-	5525 14975 5275 14975
+	2875 15275 3125 15275
 Wire Wire Line
-	5525 14875 5275 14875
+	2875 15175 3125 15175
 Wire Wire Line
-	5525 14775 5275 14775
+	2875 15075 3125 15075
+Wire Wire Line
+	2875 14975 3125 14975
 Connection ~ 13050 1775
 Wire Wire Line
 	1250 825  1250 1775
@@ -2474,9 +2481,13 @@ Wire Wire Line
 	8350 1000 9200 1000
 Wire Wire Line
 	9700 825  9700 1775
+Wire Wire Line
+	9200 1000 10050 1000
 Connection ~ 10550 1800
 Wire Wire Line
 	10550 825  10550 1800
+Wire Wire Line
+	10050 1000 10900 1000
 Wire Wire Line
 	11350 825  11350 1775
 Wire Wire Line
@@ -2639,7 +2650,7 @@ $EndComp
 Wire Wire Line
 	1500 14125 1775 14125
 Wire Wire Line
-	5275 14675 5600 14675
+	5275 14475 5600 14475
 $Comp
 L Device:R R4
 U 1 1 5E649C11
@@ -2651,10 +2662,10 @@ F 3 "~" H 5575 14375 50  0001 C CNN
 	1    5575 14375
 	0    1    1    0   
 $EndComp
-Text GLabel 5550 13675 0    50   Input ~ 0
+Text GLabel 5550 14075 0    50   Input ~ 0
 Col2
 Wire Wire Line
-	5275 13675 5550 13675
+	5275 14075 5550 14075
 $Comp
 L power:GND #PWR0108
 U 1 1 5EFB7B99
@@ -2666,36 +2677,24 @@ F 3 "" H 5575 14175 50  0001 C CNN
 	1    5575 14175
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5550 13575 0    50   Input ~ 0
+Text GLabel 2850 14275 2    50   Input ~ 0
 Col1
 Wire Wire Line
-	3125 15075 2850 15075
+	5275 13975 5550 13975
 Wire Wire Line
-	3125 15175 2850 15175
+	5275 13875 5550 13875
 Wire Wire Line
-	3125 15275 2850 15275
-Text GLabel 2850 15075 2    50   Input ~ 0
+	5275 13775 5550 13775
+Wire Wire Line
+	5275 13675 5550 13675
+Text GLabel 5550 13975 0    50   Input ~ 0
 Row4
-Text GLabel 2850 15175 2    50   Input ~ 0
+Text GLabel 5550 13875 0    50   Input ~ 0
 Row3
-Text GLabel 2850 15275 2    50   Input ~ 0
+Text GLabel 5550 13775 0    50   Input ~ 0
 Row2
-Wire Wire Line
-	3125 15375 2850 15375
-Wire Wire Line
-	9200 1000 10050 1000
-Wire Wire Line
-	10050 1225 10050 1000
-Connection ~ 10050 1000
-Wire Wire Line
-	10050 1000 10900 1000
-Wire Wire Line
-	5275 13475 5550 13475
-Text GLabel 5550 13475 0    50   Input ~ 0
+Text GLabel 5550 13675 0    50   Input ~ 0
 Row0
 Wire Wire Line
-	5525 15175 5275 15175
-Text GLabel 5525 15175 0    50   Input ~ 0
-Col11
-NoConn ~ 3125 14975
+	5275 13575 5550 13575
 $EndSCHEMATC
